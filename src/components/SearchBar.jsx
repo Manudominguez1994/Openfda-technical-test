@@ -5,10 +5,10 @@ import SearchIcon from "@mui/icons-material/Search";
 import MedicationIcon from '@mui/icons-material/Medication';
 
 function SearchBar({ onSearch }) {
-  // Definimos un estado en el cual guardaremos y mostraremos la busqueda que el usuario esta realizando
+  //State in which we will save and display the search that the user is performing.
   const [query, setQuery] = useState("");
 
-  // Creamos una funcion que cambie el estado de busqueda
+  //Function that changes the search state
   const handleSearch = () => {
     onSearch(query);
     console.log(query);
